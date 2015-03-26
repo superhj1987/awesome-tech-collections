@@ -10,5 +10,6 @@
 4. Java高级语言特性
 5. Java网络编程
 6. Java web开发
-7. Java内存管理
-8. Java性能分析
+7. Java移动开发
+8. Java内存管理
+9. Java性能分析
