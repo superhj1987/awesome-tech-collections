@@ -1,4 +1,4 @@
-# Java-develop-practice
+# Java开发实践
 
 总结一下自己的Java技术体系，查漏补缺。
 
