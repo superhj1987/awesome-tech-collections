@@ -5,7 +5,7 @@
 - DevOps
 - 消息中间件
 - 认证技术-oAuth
-- KVDB
+- Key-Value DB
 - 开发框架
 - Google Paper
 
