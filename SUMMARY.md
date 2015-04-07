@@ -5,7 +5,7 @@
    * [DevOps](server-tech/devops.md)
    * [消息中间件](server-tech/message.md)
    * [认证技术-oAuth](server-tech/oauth.md)
-   * [KVDB-Redis](server-tech/kvdb-redis.md)
+   * [Key-Value DB](server-tech/kvdb-redis.md)
    * [开发框架](server-tech/framework.md)
    * [Google Paper](server-tech/google_paper.md)
 * [Java项目与工程化](2.md)
