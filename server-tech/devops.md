@@ -18,84 +18,9 @@ DevOps（英文Development和Operations的组合）是一组过程、方法与�
 
 ## DevOps工具
 
-上面说到开发应该具有一部分运维技能，那么哪些运维技能需要开发人员掌握呢？这里罗列一些常用运维“武器”。包括：
+上面说到开发应该具有一部分运维技能，那么哪些运维技能需要开发人员掌握呢？这里罗列一些常用运维“武器”。
 
-- Git
-- Maven
 
-### 1. Git
-
-Git是一个版本管理工具，它与SVN的对比网上到处都是，这里就不再废话它那些耀眼的优点了。记得以前要搭建Git库来给研发使用是非常复杂的一件事情。需要在服务器上安装git，然后创建用户->分配权限...等一系列复杂操作来搭建一个Git环境。相关链接：[http://srhang.iteye.com/blog/1339110](http://srhang.iteye.com/blog/1339110)。面对这些复杂的操作步骤以及Git本身上手的门槛，，很多人望而却步，造成了Git并没有那么普及的状况。
-
-一切从Github横空出世开始改变了，这个看似简单的网站给很多人带来了简单极致方便的代码托管服务，同时也给全世界带来了一股开源的风潮。很多初创公司或者小公司直接选择使用github建立自己的代码仓库。
-
-与此同时，许多Github的开源实现层出不穷，如今你只需要下载一个类似的实现，部署到服务器上，你就能简单拥有你自己的"Github"。
-
-目前比较知名的Github实现，有这么几个：
-
-- gitlab(Ruby on rails实现)
-- gitbucket(Scala实现)
-- Gitblit(Java实现)
-
-更多的可以见：[http://www.educity.cn/shenghuo/1397399.html](http://www.educity.cn/shenghuo/1397399.html)
-
-其中，gitlab应该是名气最大的一个。但是自从用过gitbucket以后，，却也再也不想回到gitlab了。基于Scala编写，极易安装，扔一个war包到tomcat就完成部署，完全可以和其他如maven、jenkins并存在一个JavaEE容器中。另外，Scala这个JVM语言相比起ROR来，对于我这种Java系来说也显得亲切的很。如果那个功能用的不爽完全可以自己去二次开发一下。
-
-Git服务器的部署可以用这些开源实现完成，但是Git客户端的使用却是另一个比较高门槛的事情。和svn原理的不同，造成了很多人从svn转换到git时，摸不着头脑，然后退缩放弃。
-
-一个典型的Git客户端使用流程：
-
-- git clone [repository url]:克隆项目的git地址
-- git checkout [branchName]: 切换项目分支
-- git add [fileName]: 增加或改动了一些文件
-- git commit -a/-m: 提交文件到本地
-- git push origin master: 提交到远程库
-- git pull(git fetch && git merge): 从远程库更新代码并合并
-- git revert [revisions]: 撤销操作
-- git log -p [revision/filepath]: 查看提交历史
--
-
-更具体的教程可以参见：[Gtibook](http://git-scm.com/book/en/v2)
-
-### 2. Maven
-
-刚开始学习写Java程序的时候，跟着教程就是写一个类，然后用javac编译，再用java运行。很简单的一个事情。但是如果是一个项目呢？很多的类，很多的包，如果是web工程那么还有很多jsp、资源文件。这时候如果还是只用java自带的那些东西，也就一些大神能搞定的了吧。
-
-这时候就需要一个java工程/项目组织工具，提供编译、打包等功能。用Eclipse和Intellij这些IDE固然能解决这个问题，但是maven在某些方面却是IDE无法替代的，并且它能够很好地与IDE进行集成。
-
-- 依赖管理
-
-Maven能够帮助我们解决软件包依赖的管理问题;不再需要提交大量的jar包;引入第三方lib不需要关心其依赖。
-
-- 规范目录结构
-
-标准的目录结构有助于项目构建的标准化；项目更整洁，什么文件应该在什么地方有明确的规范；配置profile,可根据环境的不同读取不同的配置文件
-
-- 规范软件包的发布
-
-每次发布均更新版本号；更新依赖描述有统一的配置文件
-
-- 完整的项目构建阶段
-
-Maven能够对项目完整阶段进行构建；各构建阶段使用标准的Maven命令进行
-
-- 支持多种插件
-
-面向不同类型的工程项目提供不同的插件；各类插件提供各自的标准命令进行项目构建
-
-- 方便集成
-
-集成在IDE中方便使用；和其他自动化构建工具，如ant等，配合使用
-
-粗略地列出maven的几个优点，其可用性以及必要性即可见一斑。这也是现在国内很多公司都进行项目“maven化”的重要原因。当然，现在国外貌似已经开始逐步用gradle来代替maven，解决maven的一些弱点，比如依赖包过多等等。依赖包解决方案还是可以使用maven库的。如果想一步到位，直接使用gradle进行java项目组织也是值得推荐的。
-
-推荐几个常用的maven命令：
-
-- clean: 清除初始化项目
-- compile： 编译项目，可以使用-P参数指定profile
-- install: 安装包到本地
-- deploy：发布包到maven远程库
-- tomcat7:run:使用tomcat7-maven插件运行java ee项目
 
 
 

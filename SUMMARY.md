@@ -9,6 +9,8 @@
    * [开发框架](server-tech/framework.md)
    * [Google Paper](server-tech/google_paper.md)
 * [Java项目与工程化](java-project/README.md)
+   * [Git](java-project/git.md)
+   * [Maven](java-project/maven.md)
 * Java开发利器
 * Java高级语言特性
 * Java网络编程
