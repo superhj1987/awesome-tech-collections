@@ -18,4 +18,6 @@
 * Java之移动开发
 * JVM内存管理
 * Java性能分析
+* [附录](README)
+   * [Java开发的一些注意点](java.md)
 
