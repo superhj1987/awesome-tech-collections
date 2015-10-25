@@ -12,9 +12,9 @@ Git是一个版本管理工具，它与SVN的对比网上到处都是，这里�
 - gitbucket(Scala实现)
 - Gitblit(Java实现)
 
-更多的可以见：[http://www.educity.cn/shenghuo/1397399.html](http://www.educity.cn/shenghuo/1397399.html)
+更多的可以见：http://www.oschina.net/news/50222/git-code-platforms
 
-其中，gitlab应该是名气最大的一个。但是自从用过gitbucket以后，，却也再也不想回到gitlab了。基于Scala编写，极易安装，扔一个war包到tomcat就完成部署，完全可以和其他如maven、jenkins并存在一个JavaEE容器中。另外，Scala这个JVM语言相比起ROR来，对于我这种Java系来说也显得亲切的很。如果那个功能用的不爽完全可以自己去二次开发一下。
+gitlab应该是其中名气最大的一个。但是自从用过gitbucket以后，却也再也不想回到gitlab了。基于Scala编写，极易安装，扔一个war包到tomcat就完成部署，完全可以和其他如maven、jenkins并存在一个JavaEE容器中。另外，Scala这个JVM语言相比起ROR来，对于我这种Java系来说也显得亲切的很。如果那个功能用的不爽完全可以自己去二次开发一下。
 
 Git服务器的部署可以用这些开源实现完成，但是Git客户端的使用却是另一个比较高门槛的事情。和svn原理的不同，造成了很多人从svn转换到git时，摸不着头脑，然后退缩放弃。
 
@@ -28,6 +28,5 @@ Git服务器的部署可以用这些开源实现完成，但是Git客户端的�
 - git pull(git fetch && git merge): 从远程库更新代码并合并
 - git revert [revisions]: 撤销操作
 - git log -p [revision/filepath]: 查看提交历史
--
 
-更具体的教程可以参见：[Gitbook](http://git-scm.com/book/en/v2)
+更具体的教程可以参见：[Gitbook](http://git-scm.com/book/en/v2)，另外有一个非常卡通的git教程网站也很不错：[猴子都能懂的Git入门](http://backlogtool.com/git-guide/cn/)。
