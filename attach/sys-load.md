@@ -56,7 +56,7 @@ Ps:此文原载于本人技术博客:<http://rowkey.me/blog>
 			echo 1000000 > /proc/sys/fs/file-max
 		永久性：在/etc/sysctl.conf中设置
 			fs.file-max = 1000000
-	
+
 - 进程最大打开文件描述符数：这个是配单个进程能够打开的最大文件数目。可以通过ulimit -n查看/修改。如果想要永久修改，则需要修改/etc/security/limits.conf中的nofile。
 
 通过读取/proc/sys/fs/file-nr可以看到当前使用的文件描述符总数。另外，对于文件描述符的配置，需要注意以下几点：
@@ -70,7 +70,7 @@ Ps:此文原载于本人技术博客:<http://rowkey.me/blog>
 
 - 进程数限制：ulimit -u可以查看/修改单个用户能够打开的最大进程数。/etc/security/limits.conf中的noproc则是系统的最大进程数。
 - 线程数限制
-		
+
 	- 可以通过/proc/sys/kernel/threads-max查看系统总共可以打开的最大线程数。
 	- 单个进程的最大线程数和PTHREAD_THREADS_MAX有关，此限制可以在/usr/include/bits/local_lim.h中查看,但是如果想要修改的话，需要重新编译。
 	- 这里需要提到一点的是，Linux内核2.4的线程实现方式为linux threads，是轻量级进程，都会首先创建一个管理线程，线程数目的大小是受PTHREAD_THREADS_MAX影响的。但Linux2.6内核的线程实现方式为NPTL,是一个改进的LWP实现，最大一个区别就是，线程公用进程的pid（tgid），线程数目大小只受制于资源。
@@ -79,9 +79,9 @@ Ps:此文原载于本人技术博客:<http://rowkey.me/blog>
 ### 2.3.3 tcp内核参数
 
 在一台服务器CPU和内存资源额定有限的情况下，最大的压榨服务器的性能，是最终的目的。在节省成本的情况下，可以考虑修改Linux的内核TCP/IP参数，来最大的压榨服务器的性能。如果通过修改内核参数也无法解决的负载问题，也只能考虑升级服务器了，这是硬件所限，没有办法的事。
-	
+
 	netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
-	
+
 使用上面的命令，可以得到当前系统的各个状态的网络连接的数目。如下：
 
 	LAST_ACK 14
@@ -100,7 +100,7 @@ Ps:此文原载于本人技术博客:<http://rowkey.me/blog>
 - net.ipv4.tcp_tw_reuse = 1 //表示开启重用。允许将TIME-WAIT sockets重新用于新的TCP连接，默认为0，表示关闭；
 - net.ipv4.tcp_tw_recycle = 1 //表示开启TCP连接中TIME-WAIT sockets的快速回收，默认为0，表示关闭；
 - net.ipv4.tcp_fin_timeout = 30 //修改系統默认的 TIMEOUT 时间。
-	
+
 这里需要注意的一点就是当打开了tcp_tw_reccycle，就会检查时间戳，移动环境下的发来的包的时间戳有些时候是乱跳的，会把带了“倒退”的时间戳的包当作是“recycle的tw连接的重传数据，不是新的请求”，于是丢掉不回包，造成大量丢包。
 
 此外，还可以通过优化tcp/ip的可使用端口的范围，进一步提升负载能力。，如下：
@@ -109,7 +109,7 @@ Ps:此文原载于本人技术博客:<http://rowkey.me/blog>
 - net.ipv4.ip_local_port_range = 10000 65000 //表示用于向外连接的端口范围。缺省情况下很小：32768到61000，改为10000到65000。（注意：这里不要将最低值设的太低，否则可能会占用掉正常的端口！）
 - net.ipv4.tcp_max_syn_backlog = 8192 //表示SYN队列的长度，默认为1024，加大队列长度为8192，可以容纳更多等待连接的网络连接数。
 - net.ipv4.tcp_max_tw_buckets = 5000 //表示系统同时保持TIME_WAIT的最大数量，如果超过这个数字，TIME_WAIT将立刻被清除并打印警告信息。默认为180000，改为5000。对于Apache、Nginx等服务器，上几行的参数可以很好地减少TIME_WAIT套接字数量，但是对于Squid，效果却不大。此项参数可以控制TIME_WAIT的最大数量，避免Squid服务器被大量的TIME_WAIT拖死。
-	
+
 ### 2.4 应用服务器配置
 
 说到应用服务器配置，这里需要提到应用服务器的几种工作模式,也叫并发策略。
@@ -148,22 +148,22 @@ tomcat的关键配置总体上有两大块：jvm参数配置和connector参数�
 	- 栈大小：-Xss或-XX:ThreadStackSize
 
 	这里对于栈大小有一点需要注意的是：在Linux x64上ThreadStackSize的默认值就是1024KB，给Java线程创建栈会用这个参数指定的大小。如果把-Xss或者-XX:ThreadStackSize设为0，就是使用“系统默认值”。而在Linux x64上HotSpot VM给Java栈定义的“系统默认”大小也是1MB。所以普通Java线程的默认栈大小怎样都是1MB。这里有一个需要注意的地方就是java的栈大小和之前提到过的操作系统的操作系统栈大小（ulimit -s）：这个配置只影响进程的初始线程；后续用pthread_create创建的线程都可以指定栈大小。HotSpot VM为了能精确控制Java线程的栈大小，特意不使用进程的初始线程（primordial thread）作为Java线程。
-	
+
 	其他还要根据业务场景，选择使用那种垃圾回收器，回收的策略。另外，当需要保留GC信息时，也需要做一些设置。
-	
+
 	典型配置可见：<https://github.com/superhj1987/awesome-config/blob/master/tomcat/java_opts.conf>
-   
+
 - connector参数配置
 
 	- protocol: 有三个选项：bio；nio；apr。建议使用apr选项，性能为最高。
-	- connectionTimeout：连接的超时时间  
-   - maxThreads：最大线程数，此值限制了bio的最大连接数 
+	- connectionTimeout：连接的超时时间
+   - maxThreads：最大线程数，此值限制了bio的最大连接数
    - minSpareThreads: 最大空闲线程数
    - acceptCount：可以接受的最大请求数目（未能得到处理的请求排队）
    - maxConnection: 使用nio或者apr时，最大连接数受此值影响。
 
  	典型配置可见：<https://github.com/superhj1987/awesome-config/blob/master/tomcat/connector.conf>
- 	
+
 	一般的当一个进程有500个线程在跑的话，那性能已经是很低很低了。Tomcat默认配置的最大请求数是150。当某个应用拥有250个以上并发的时候，应考虑应用服务器的集群。
 
 	另外，并非是无限调大maxTreads和maxConnection就能无限调高并发能力的。线程越多，那么cpu花费在线程调度上的时间越多，同时，内存消耗也就越大，那么就极大影响处理用户的请求。受限于硬件资源，并发值是需要设置合适的值的。
@@ -202,6 +202,6 @@ redis是目前用的比较多的缓存数据库（当然，也有直接把redis�
 
 一般的web应用架构如下图所示：lvs+nginx+tomcat+mysql+redis
 
-![web-arch](/images/web-arch.jpg)
+![web-arch](../images/web-arch.jpg)
 
 ## 四. 负载均衡
