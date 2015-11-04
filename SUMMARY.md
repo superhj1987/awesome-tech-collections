@@ -19,6 +19,6 @@
 * JVM内存管理
 * Java性能分析
 * [附录](README.md)
-   * [Java开发的一些注意点](java.md)
-   * [系统负载能力浅析](.)
+   * [Java开发的一些注意点](attach/java.md)
+   * [系统负载能力浅析](attch/sys-load.md)
 
