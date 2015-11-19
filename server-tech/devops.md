@@ -93,16 +93,33 @@ mysql是目前最常用的关系型数据库，支持复杂的查询。但是其
 。
 其中，redis是目前用的比较多的缓存数据库（当然，也有直接把redis当做数据库使用的）。redis是单线程基于内存的数据库，读写性能远远超过mysql。一般情况下，对redis做读写分离主从同步就可以应对大部分场景的应用。但是这样的方案缺少ha，尤其对于分布式应用，是不可接受的。目前，redis集群的实现方案有以下几个：
 
-- redis cluster:这是一种去中心化的方案，是redis的官方实现。是一种非常“重”的方案，已经不是Redis单实例的“简单、可依赖”了。目前应用案例还很少，貌似国内的芒果台用了，结局不知道如何。
+- [redis cluster](http://redis.io/topics/cluster-tutorial):这是一种去中心化的方案，是redis的官方实现。是一种非常“重”的方案，已经不是Redis单实例的“简单、可依赖”了。目前应用案例还很少，貌似国内的芒果台用了，结局不知道如何。
 - [twemproxy](https://github.com/twitter/twemproxy)：这是twitter开源的redis和memcached的proxy方案。比较成熟，目前的应用案例比较多，但也有一些缺陷，尤其在运维方面。比如无法平滑的扩容/缩容，运维不友好等。
-- [codis](https://github.com/wandoulabs/codis): 这个是豌豆荚开源的redis proxy方案，能够兼容twemproxy，并且对其做了很多改进。由豌豆荚于2014年11月开源，基于Go和C开发。现已广泛用于豌豆荚的各种Redis业务场景。现在比Twemproxy快近100%。目前据我所知除了豌豆荚之外，hulu、网易等公司也在使用这套方案。当然，其升级项目[https://github.com/reborndb/reborn](reborndb)号称比codis还要厉害。
+- [codis](https://github.com/wandoulabs/codis): 这个是豌豆荚开源的redis proxy方案，能够兼容twemproxy，并且对其做了很多改进。由豌豆荚于2014年11月开源，基于Go和C开发。现已广泛用于豌豆荚的各种Redis业务场景。现在比Twemproxy快近100%。目前据我所知除了豌豆荚之外，hulu、网易等公司也在使用这套方案。当然，其升级项目[reborndb](https://github.com/reborndb/reborn)号称比codis还要厉害。
 
 ### 5. Linux性能优化与诊断
 
-由于现在大多数互联网应用都是部署在Linux上的，因此对于Linux系统的优化以及故障诊断是一个很关键的技能。
+由于现在大多数互联网应用都是部署在Linux上的，因此对于Linux系统的优化以及故障诊断是一个很关键的技能。以下就几个关键的性能指标分别做介绍：
+
+- CPU利用率：这是系统非常重要的一个性能指标，表示系统运算的繁忙程度。对于普通的web程序，如果cpu达到200%以上，就说明有耗费cpu的计算或者进程在进行中，需要排除是正常的业务还是其他异常、垃圾回收造成的。一般来说通过下面的命令是可以获取到相关的信息的。
+        vmstat top
+- 内存利用率
+        /proc/meminfo /proc/slabinfo ps( aux) free
+- I/O利用率
+        iostat sar
+- 网络利用率
+        netstat  ifconfig
+- 系统跟踪
+        top strace
+
+这里不得不说的是vmstat命令，vmstat命令是最常见的Linux/Unix监控工具，可以展现给定时间间隔的服务器的状态值,包括服务器的CPU使用率，内存使用，虚拟内存交换情况,IO读写情况。这个命令有两个最大的优势，一个是Linux/Unix都支持，二是相比top，我可以看到整个机器的CPU,内存,IO的使用情况，而不是单单看到各个进程的CPU使用率和内存使用率(使用场景不一样)。
+
+此外，这里给大家推荐一个开源项目，里面收集了很多linux运维需要的shell脚本等。地址见：<https://github.com/oldratlee/useful-scripts>
 
 ## SRE
 
 最近听说了一个SRE的名词，指的是Site Reliable Engineering(网站可用性工程)。这个词起源于Google，是运维更进一层的一个角色，一般是由软件研发工程师转型而来的。
 
-在Google的SRE工程师一般需要掌握:算法，数据结构，编程能力，网络编程，分布式系统，可扩展架构，故障排除。比起国内的OPS要求要高得多，一般由软件研发工程师转型而来。
+在Google的SRE工程师一般需要掌握:算法，数据结构，编程能力，网络编程，分布式系统，可扩展架构，故障排除。比起国内的OPS要求要高得多，一般由软件研发工程师转型而来。是一个比较综合并且高级的职位。
+
+对于这个职位来说，需要扎实掌握计算机科学的相关理论性以及工程性知识，除此之外，充足的工程经验也是必不可少的。
