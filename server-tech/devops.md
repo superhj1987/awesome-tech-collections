@@ -101,7 +101,7 @@ mysql是目前最常用的关系型数据库，支持复杂的查询。但是其
 
 由于现在大多数互联网应用都是部署在Linux上的，因此对于Linux系统的优化以及故障诊断是一个很关键的技能。以下就几个关键的性能指标分别做介绍：
 
-- CPU利用率：这是系统非常重要的一个性能指标，表示系统运算的繁忙程度。对于普通的web程序，如果cpu达到200%以上，就说明有耗费cpu的计算或者进程在进行中，需要排除是正常的业务还是其他异常、垃圾回收造成的。一般来说通过下面的命令是可以获取到相关的信息的。
+- CPU利用率：这是系统非常重要的一个性能指标，表示系统运算的繁忙程度。对于普通的web程序，如果cpu达到200%以上，就说明有耗费cpu的计算或者进程在进行中，需要排除是正常的业务还是其他异常、垃圾回收造成的。一般来说通过下面的命令是可以获取到相关的信息的,命令具体的使用可参见man手册，后续的命令不做具体介绍的同样。
         vmstat top
 - 内存利用率
         /proc/meminfo /proc/slabinfo ps( aux) free
@@ -111,6 +111,18 @@ mysql是目前最常用的关系型数据库，支持复杂的查询。但是其
         netstat  ifconfig
 - 系统跟踪
         top strace
+- 调度器调优
+        单处理器 对称多处理器(SMP) 非一致性内存访问(NUMA)
+        Linux2.6内核调度器(多队列调度器)
+        CHILD_PENALTY      CREDIT_LIMIT
+- 文件系统调优
+        Ext2 Ext3（日志 tuner2fs） ReiserFS（Reiserfstune） JFS
+- 网络调优-TCP/IP协议内核参数:
+        tcp_rmem tcp_wmen tcp_keepalive_time
+        ip_local_port_range tcp_max_syn_backlog
+        tcp_max_tw_buckets  netdev_max_backlog
+- 代码调优
+        sql 良好的算法  内存占用 IO开销 数据结构
 
 这里不得不说的是vmstat命令，vmstat命令是最常见的Linux/Unix监控工具，可以展现给定时间间隔的服务器的状态值,包括服务器的CPU使用率，内存使用，虚拟内存交换情况,IO读写情况。这个命令有两个最大的优势，一个是Linux/Unix都支持，二是相比top，我可以看到整个机器的CPU,内存,IO的使用情况，而不是单单看到各个进程的CPU使用率和内存使用率(使用场景不一样)。
 
