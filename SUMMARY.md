@@ -14,6 +14,6 @@
 * Java开发利器
 * Java高级语言特性
 * Java网络编程
-* JVM内存管理
+* Java内存管理
 * Java性能分析
 
