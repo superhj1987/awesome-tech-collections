@@ -1,7 +1,7 @@
 # Summary
 
 * [引言](README.md)
-* [服务端技术体系](server-tech/README.md)
+* [后端技术体系](server-tech/README.md)
    * [DevOps](server-tech/devops.md)
    * [消息中间件](server-tech/message.md)
    * [认证技术-oAuth](server-tech/oauth.md)
