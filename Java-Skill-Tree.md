@@ -1,7 +1,5 @@
 # Java后端工程师技能树
 
-此技能树借鉴自：https://github.com/geekcompany/full-stack-tree
+此技能树借鉴自：https://github.com/geekcompany/full-stack-tree, 基本涵盖了一个Java后端工程师应该具备的技能。
 
 ![java-skill-tree](images/Java后端工程师技能树.png)
-
-[查看图片](images/Java后端工程师技能树.png)
