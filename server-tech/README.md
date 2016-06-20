@@ -15,6 +15,6 @@
 
 更为全面的，可以参考下面的Java后端工程师技能树(借鉴自https://github.com/geekcompany/full-stack-tree的全栈技能树)。
 
-![java-skill-tree](../images/Java后端工程师技能树.png)
+![java-skill-tree](../images/java-skill-tree.png)
 
 

@@ -3,11 +3,12 @@
 * [引言](README.md)
 * [后端技术体系](server-tech/README.md)
    * [DevOps](server-tech/devops.md)
-   * [消息中间件](server-tech/message.md)
+   * [消息队列](server-tech/message.md)
    * [认证技术-oAuth](server-tech/oauth.md)
-   * [NoSql DB](server-tech/kvdb-redis.md)
-   * [开发框架](server-tech/framework.md)
-   * [Google Paper](server-tech/google_paper.md)
+   * [关系型数据库](server-tech/rds.md)
+   * [非关系型数据库](server-tech/nosql.md)
+   * [Java开发框架](server-tech/framework.md)
+   * [分布式&大数据](server-tech/distribute-data.md)
 * [Java项目与工程化](java-project/README.md)
    * [Git](java-project/git.md)
    * [Maven](java-project/maven.md)
@@ -17,7 +18,7 @@
 * Java内存管理
 * Java性能分析
 * 大数据技术
-* 博文精选
-* 其他
-   * [日志框架](log.md)
+* [博文精选](attach/README.md)
+   * [系统负载能力浅析](attach/sys-load.md)
+   * [Java开发的一些注意点](attach/java-tips.md)
 
