@@ -5,12 +5,13 @@
 对于一个Java后端工程师来说，抛开语言不谈，具有的技术体系应该包括但不限于以下几点：
 
 - DevOps
-- 消息中间件
+- 消息队列
 - 认证技术-oAuth
-- MySql
-- NoSql
-- 开发框架
-- Google Paper
+- 关系型数据库
+- 非关系型数据库
+- Java开发框架
+- 分布式&大数据
+- 数据挖掘
 
 更为全面的，可以参考下面的Java后端工程师技能树(借鉴自https://github.com/geekcompany/full-stack-tree的全栈技能树)。
 
