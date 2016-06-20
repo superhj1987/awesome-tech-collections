@@ -11,7 +11,6 @@
 - 非关系型数据库
 - Java开发框架
 - 分布式&大数据
-- 数据挖掘
 
 更为全面的，可以参考下面的Java后端工程师技能树(内容借鉴自https://github.com/geekcompany/full-stack-tree)。
 
