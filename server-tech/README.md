@@ -13,7 +13,7 @@
 - 分布式&大数据
 - 数据挖掘
 
-更为全面的，可以参考下面的Java后端工程师技能树(借鉴自https://github.com/geekcompany/full-stack-tree的全栈技能树)。
+更为全面的，可以参考下面的Java后端工程师技能树(内容借鉴自https://github.com/geekcompany/full-stack-tree)。
 
 ![java-skill-tree](../images/java-skill-tree.png)
 

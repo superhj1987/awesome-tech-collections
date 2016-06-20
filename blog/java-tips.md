@@ -1,6 +1,6 @@
 # Java开发的一些注意点
 
-***Ps:此文原载于本人技术博客:<http://superhj1987.github.com/blog/2016/06/20/java-tips/>***
+***Ps:此文原载于本人技术博客:<http://superhj1987.github.com/blog/2016/06/19/java-tips/>***
 
 ## 1. 将一些需要变动的配置写在属性文件中
 

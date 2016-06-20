@@ -18,7 +18,7 @@
 * Java内存管理
 * Java性能分析
 * 大数据技术
-* [博文精选](attach/README.md)
-   * [系统负载能力浅析](attach/sys-load.md)
-   * [Java开发的一些注意点](attach/java-tips.md)
+* [博文精选](blog/README.md)
+   * [系统负载能力浅析](blog/sys-load.md)
+   * [Java开发的一些注意点](blog/java-tips.md)
 
