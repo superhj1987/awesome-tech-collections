@@ -44,8 +44,6 @@
 
 ### JMS
 
-用时：3天
-
 + 大规模分布式消息中间件简介：http://blog.csdn.net/huyiyang2010/article/details/5969944
 + JMS Overview: http://docs.oracle.com/javaee/6/tutorial/doc/bncdr.html
 + Basic JMS API Concepts: http://docs.oracle.com/javaee/6/tutorial/doc/bncdx.html
