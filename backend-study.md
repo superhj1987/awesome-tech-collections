@@ -1,22 +1,22 @@
-# Java后端工程师学习计划以及资料
+# The Way To Be A Java Backend Engineer
 
-本计划为Java后端工程师的学习计划，是一个相对完整的从基础到高级的修炼过程。此计划只涵盖了Java后端工程师的部分技能，全面的技能树可参考：[java-skill-tree](images/java-skill-tree.png)。
+本计划为Java后端工程师的学习计划，是一个相对完整的从基础到高级的修炼过程。此计划只涵盖了Java后端工程师的部分技能，全面的技能树可见：<https://raw.githubusercontent.com/superhj1987/pragmatic-java-developer/master/images/java-skill-tree.png>。
 
 ## 一. Git版本管理+Maven工程管理
 
-<http://weibo.com/p/1001643874239169320051>
+[微博新兵训练营课程——环境与工具](http://weibo.com/p/1001643874239169320051)
 
 ## 二. Java高级编程
 
 - Socket编程: <http://ifeve.com/java-socket/>
 - NIO: <http://ifeve.com/java-nio-all/>
 - 序列化: <http://ifeve.com/java-io-s-objectinputstream-objectoutputstream/>
-- RPC: <http://dubbo.io>
+- RPC框架: <http://dubbo.io>
 - 并发编程：<http://ifeve.com/java-concurrency-constructs/>
 
 ## 三. 性能优化与诊断-系统
 
-<http://item.jd.com/10156942.html>（Linux服务器性能调整 ）
+[《Linux服务器性能调整》](https://book.douban.com/subject/4027746/)
 
 学习内容：
 
@@ -28,7 +28,7 @@
 
 ## 四. 性能优化与诊断-JVM
 
-<http://item.jd.com/11407830.html>
+[《Java性能优化权威指南》](https://book.douban.com/subject/25828043/)
 
 学习内容：
 
@@ -38,7 +38,7 @@
 + JVM参数与调优步骤
 + JVM调优案例分析
 
-另：可学习中文书籍《深入理解Java虚拟机》： <http://item.jd.com/11252778.html>
+另：可学习中文书籍[《深入理解Java虚拟机》](https://book.douban.com/subject/24722612/)
 
 ## 五. 消息中间件
 
@@ -92,7 +92,7 @@
 
 ### RabbitMQ
 
-http://www.rabbitmq.com/documentation.html
+[官方文档](http://www.rabbitmq.com/documentation.html)
 
 ## 六. Redis设计与实现
 
@@ -117,21 +117,25 @@ http://www.rabbitmq.com/documentation.html
 
 ### 实时计算
 
-《Storm分布式实时计算模式》：<http://item.jd.com/11593386.html>
++ Storm:[《Storm分布式实时计算模式》](https://book.douban.com/subject/26312249/)
 
-另，spark streaming可以参考官方文档学习: <https://spark.apache.org/streaming/>
++ Spark streaming: [官网文档](https://spark.apache.org/streaming/)
 
 ### 离线计算
 
-- hadoop（<http://item.jd.com/11566298.html>） 
-- hive（<http://item.jd.com/11363739.html>） 
-- spark（<http://item.jd.com/11782888.html>）
++ Hadoop:[《Hadoop权威指南》](https://book.douban.com/subject/26206050/)
++ Hive:[《Hive编程指南》](https://book.douban.com/subject/25791255/)
++ Spark:[《Spark快速大数据分析》](https://book.douban.com/subject/26616244/)
+
+### Lambda架构
+
+[Linkedln技术高管Jay Kreps：Lambda架构剖析](http://www.csdn.net/article/2014-07-08/2820562-Lambda-Linkedln)
 
 ### 机器学习：
 
-- 《推荐系统实战》<http://item.jd.com/11007625.html>
-- 《计算广告》：<http://item.jd.com/11765659.html> 
-- 《集体智慧》: <http://item.jd.com/11667512.html> 
-- 《机器学习》：<http://item.jd.com/11867803.html>
+- [《推荐系统实践》](https://book.douban.com/subject/10769749/)
+- [《计算广告》](https://book.douban.com/subject/26596778/) 
+- [《集体智慧》](https://book.douban.com/subject/3288908/) 
+- [《机器学习》](https://book.douban.com/subject/26708119/)
 
 
