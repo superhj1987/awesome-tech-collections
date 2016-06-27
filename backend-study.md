@@ -40,7 +40,7 @@
 
 另：可学习中文书籍《深入理解Java虚拟机》： <http://item.jd.com/11252778.html>
 
-## 五. 消息中间件-JMS & &Kafka
+## 五. 消息中间件
 
 ### JMS
 
@@ -92,7 +92,9 @@
 - 什么是kafka
 - 什么场景下使用kafka
 
-另, RabbitMQ，可参考官方文档。
+### RabbitMQ
+
+http://www.rabbitmq.com/documentation.html
 
 ## 六. Redis设计与实现
 
