@@ -1,6 +1,6 @@
 # Java后端工程师学习计划以及资料
 
-本计划为Java后端工程师的培训计划，是一个相对完整的从基础到高级的修炼过程。但此计划只涵盖了部分技能，全面的技能树可参考：<images/java-skill-tree.png>
+本计划为Java后端工程师的培训计划，是一个相对完整的从基础到高级的修炼过程。但此计划只涵盖了部分技能，全面的技能树可参考：[java-skill-tree](images/java-skill-tree.png)
 
 ## 一. Git版本管理+Maven工程管理
 
@@ -11,7 +11,7 @@
 - Socket编程: <http://ifeve.com/java-socket/>
 - NIO: <http://ifeve.com/java-nio-all/>
 - 序列化: <http://ifeve.com/java-io-s-objectinputstream-objectoutputstream/>
-- RPC: dubbo.io
+- RPC: <http://dubbo.io>
 - 并发编程：<http://ifeve.com/java-concurrency-constructs/>
 
 ## 三. 性能优化与诊断-系统
@@ -55,8 +55,6 @@
 + Further Information about JMS: http://docs.oracle.com/javaee/6/tutorial/doc/bncgu.html
 
 ### Kafka教程
-
-用时：10天
 
 学习链接：http://www.orchome.com/kafka/index
 
@@ -109,17 +107,13 @@
 + 功能的实现
 + 内部运作机制
 
-## 七. 大数据相关
+## 七. 数据相关
 
-### 理论基础：Google paper
+### 理论基础
 
-学习链接：可网上搜索
-
-学习内容：
-
-+ MapReduce
-+ GFS
-+ Bigtable
++ MapReduce：http://blog.csdn.net/active1001/archive/2007/07/02/1675920.aspx
++ GFS：http://blog.csdn.net/xuleicsu/archive/2005/11/10/526386.aspx
++ Bigtable：http://blog.csdn.net/accesine960/archive/2006/02/09/595628.aspx
 
 ### 实时计算
 
@@ -128,6 +122,7 @@
 另，spark streaming可以参考官方文档学习: <https://spark.apache.org/streaming/>
 
 ### 离线计算
+
 - hadoop（<http://item.jd.com/11566298.html>） 
 - hive（<http://item.jd.com/11363739.html>） 
 - spark（<http://item.jd.com/11782888.html>）
