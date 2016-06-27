@@ -1,4 +1,4 @@
-# The Way To Be A Java Backend Engineer
+# Study To Be a Java Backend Engineer
 
 本计划为Java后端工程师的学习计划，是一个相对完整的从基础到高级的修炼过程。此计划只涵盖了Java后端工程师的部分技能，全面的技能树可见：<https://raw.githubusercontent.com/superhj1987/pragmatic-java-developer/master/images/java-skill-tree.png>。
 
