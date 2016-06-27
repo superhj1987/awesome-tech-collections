@@ -1,6 +1,6 @@
 # Java后端工程师学习计划以及资料
 
-本计划为Java后端工程师的培训计划，是一个相对完整的从基础到高级的修炼过程。但此计划只涵盖了部分技能，全面的技能树可参考：[java-skill-tree](images/java-skill-tree.png)
+本计划为Java后端工程师的学习计划，是一个相对完整的从基础到高级的修炼过程。此计划只涵盖了Java后端工程师的部分技能，全面的技能树可参考：[java-skill-tree](images/java-skill-tree.png)。
 
 ## 一. Git版本管理+Maven工程管理
 
