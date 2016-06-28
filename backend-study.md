@@ -1,1 +1,1 @@
-[传送门](blog/java-backend-study.md)
+[传送门](http://www.rowkey.me/blog/2016/06/27/java-backend-study/)
