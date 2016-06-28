@@ -118,7 +118,6 @@
 ### 实时计算
 
 + Storm:[《Storm分布式实时计算模式》](https://book.douban.com/subject/26312249/)
-
 + Spark streaming: [官网文档](https://spark.apache.org/streaming/)
 
 ### 离线计算
