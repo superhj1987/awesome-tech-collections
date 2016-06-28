@@ -19,7 +19,7 @@
 * [Java性能分析](java-profile/README.md)
 * [分布式&大数据](distribute-data/README.md)
 * [博文精选](blog/README.md)
-   * [Java后端工程师学习之路](blog/java-backend-study.md)
-   * [Java开发的一些注意点](blog/java-tips.md)
-   * [系统负载能力浅析](blog/sys-load.md)
+   * [Java后端工程师学习之路](http://www.rowkey.me/blog/2016/06/27/java-backend-study/)
+   * [Java开发的一些注意点](http://www.rowkey.me/blog/2016/06/19/java-tips/)
+   * [系统负载能力浅析](http://www.rowkey.me/blog/2015/09/09/load-analysis/)
 
