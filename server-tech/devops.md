@@ -126,7 +126,7 @@ mysql是目前最常用的关系型数据库，支持复杂的查询。但是其
 
 这里不得不说的是vmstat命令，vmstat命令是最常见的Linux/Unix监控工具，可以展现给定时间间隔的服务器的状态值,包括服务器的CPU使用率，内存使用，虚拟内存交换情况,IO读写情况。这个命令有两个最大的优势，一个是Linux/Unix都支持，二是相比top，我可以看到整个机器的CPU,内存,IO的使用情况，而不是单单看到各个进程的CPU使用率和内存使用率(使用场景不一样)。
 
-这里给大家推荐一个开源项目，里面收集了很多linux运维需要的shell脚本等。地址见：<https://github.com/oldratlee/useful-scripts>
+这里有一个开源项目，里面收集了很多linux运维需要的shell脚本等。地址见：<https://github.com/superhj1987/useful-scripts>
 
 ## SRE
 
