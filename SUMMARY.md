@@ -8,7 +8,6 @@
    * [关系型数据库](server-tech/rds.md)
    * [非关系型数据库](server-tech/nosql.md)
    * [Java开发框架](server-tech/framework.md)
-   * [分布式&大数据](server-tech/distribute-data.md)
 * [Java项目与工程化](java-project/README.md)
    * [Git](java-project/git.md)
    * [Maven](java-project/maven.md)
