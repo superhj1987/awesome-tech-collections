@@ -1,7 +1,7 @@
 # Summary
 
 * [引言](README.md)
-* [后端技术体系](server-tech/README.md)
+* [Java后端技术体系概览](server-tech/README.md)
    * [DevOps](server-tech/devops.md)
    * [消息队列](server-tech/message.md)
    * [认证技术-oAuth](server-tech/oauth.md)
@@ -19,8 +19,7 @@
 * [Java性能分析](java-profile/README.md)
 * [分布式&大数据](distribute-data/README.md)
 * [博文精选](blog/README.md)
-   * [Java后端工程师学习大纲](http://www.rowkey.me/blog/2016/06/27/java-backend-study/)
-   * [系统负载能力浅析](http://www.rowkey.me/blog/2015/09/09/load-analysis/)
-   * [Java开发的一些注意点](http://www.rowkey.me/blog/2016/06/19/java-tips/)
-   
+   * [Java后端工程师学习大纲](http:/www.rowkey.me/blog/2016/06/27/java-backend-study/)
+   * [系统负载能力浅析](http:/www.rowkey.me/blog/2015/09/09/load-analysis/)
+   * [Java开发的一些注意点](http:/www.rowkey.me/blog/2016/06/19/java-tips/)
 
