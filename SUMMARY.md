@@ -16,16 +16,27 @@
     * [ORM框架](server-tech/orm.md)
     * [JavaEE性能监测框架](server-tech/cache.md)
 * [Java开发利器](java-tools/README.md)
+    * Google-guava
+    * Apache-Common
+    * FastUtil
 * [Java高级语言特性](java-advance/README.md)
+    * 类加载器
+    * 注解
+    * 泛型
+    * RTTI&反射
+    * JNI
 * [Java网络编程](java-network/README.md)
+    * Socket
+    * NIO
+    * 序列化
+    * RPC
 * [Java内存管理](java-memory/README.md)
-    * Java内存管理
+    * Java内存概览
     * Java并发编程模型
 * [Java性能分析](java-profile/README.md)
     * 系统性能分析
     * JVM性能分析
-* [博文精选](blog/README.md)
+* [附录](blog/README.md)
     * [Java后端工程师学习大纲](http:/www.rowkey.me/blog/2016/06/27/java-backend-study/)
-    * [系统负载能力浅析](http:/www.rowkey.me/blog/2015/09/09/load-analysis/)
     * [Java开发的一些注意点](http:/www.rowkey.me/blog/2016/06/19/java-tips/)
 
