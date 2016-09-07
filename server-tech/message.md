@@ -30,5 +30,9 @@ JMS\(Java Message Service\)是一个简单的消息中间件规范，专用于Ja
 
 ## RabbitMQ
 
-AMQP\(The Advanced Message Queuing Protocol\)协议是一个比较复杂的消息中间件协议。 它是和语言无关的，在金融行业使用的新兴消息中间件，是一个异步消息传递所使用的应用层协议规范。，目标是为通用消息队列架构提供通用构建工具  
+AMQP\(The Advanced Message Queuing Protocol\)协议是一个比较复杂的消息中间件协议。 它是和语言无关的，在金融行业使用的新兴消息中间件，是一个异步消息传递所使用的应用层协议规范。，目标是为通用消息队列架构提供通用构建工具。
+
+RabbitMQ即时实现了AMQP的消息队列。其关注的主要特性包括消息的顺序性、安全、事务等。其主要架构如下图所示：
+
+![](/assets/rabbitmq.png)
 
