@@ -1,7 +1,7 @@
 # Summary
 
 * [引言](README.md)
-* [Java后端技术体系概览](server-tech/README.md)
+* [后端技术体系概览](server-tech/README.md)
     * [DevOps](server-tech/devops.md)
     * [消息队列](server-tech/message.md)
     * [认证技术-oAuth](server-tech/oauth.md)
