@@ -16,7 +16,7 @@
 * [Java开发框架](framework/README.md)
     * [MVC框架](framework/mvc.md)
     * [ORM框架](framework/orm.md)
-    * [JavaEE性能监测框架](framework/cache.md)
+    * [性能监测框架](framework/cache.md)
 * [Java开发利器](java-tools/README.md)
     * Google-guava
     * Apache-Common
