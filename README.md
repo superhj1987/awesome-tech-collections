@@ -27,13 +27,11 @@
 	- MacTalk：**sagacity-mac**，池建强的个人公众号
 	- EGONetworks: **egonetworks**，超级极客邦，是InfoQ下的一个高端技术人才的组织。分享的内容囊括了研发管理、技术成长、架构等。
 
-- [研发文档模板/示例](document)： 研发以及研发管理用到的一些文档模板
+- 研发文档模板/示例：研发以及研发管理用到的一些文档模板
 	+ [business.md](document/business.md): 业务流程文档
 	+ [arch.md](document/arch.md): 架构设计文档
 	+ [module.md](document/module.md): 模块详细设计文档
 	+ [deploy.md](document/deploy.md): 部署确认文档
 	+ [changeLog.md](document/changeLog.md): 发布变动
-	+ [query.sql](document/query.md): 数据库DML
-	+ [schemal.sql](document/schemal.sql): 数据库DDL
-
-
+	+ [query.sql](document/query(DML).md): 数据库DML
+	+ [schemal.sql](document/schemal(DDL).sql): 数据库DDL
