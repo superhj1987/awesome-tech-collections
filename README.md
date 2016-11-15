@@ -2,9 +2,7 @@
 
 技术相关资料收集
 
----
-
-## 技术阅读
+## 阅读
 
 - **值得follow的技术网站/博客**
 	- [开发者头条](http://toutiao.io): 一个技术文章分享网站，**码农周刊**的主办站点和内容来源。
@@ -30,17 +28,16 @@
 	- MacTalk：**sagacity-mac**，池建强的个人公众号
 	- EGONetworks: **egonetworks**，超级极客邦，是InfoQ下的一个高端技术人才的组织。分享的内容囊括了研发管理、技术成长、架构等。
 
-----
+## 文档
 
-## 技术文档
-
-- **可以参考的研发文档模板/示例**：研发以及研发管理用到的一些文档模板
-	+  业务流程文档：[business.md](document/business.md)
-	+  架构设计文档：[arch.md](document/arch.md)
-	+  模块详细设计文档： [module.md](document/module.md)
-	+  部署文档： [deploy.md](document/deploy.md)
-	+  发布变动： [changeLog.md](document/changeLog.md)
-	+  数据库DDL：[schemal.sql](document/schemal(DDL).sql)
-	+  数据库DML：[query.sql](document/query(DML).md)
-	+  上线确认书：[deploy_review.md](document/deploy_review.md)
-	+  故障总结表: [accident_notes.md](document/accident_notes.md)
+- **可以参考的研发文档模板/示例**
+	- [业务流程文档](document/business.md)
+	- [架构设计文档](document/arch.md)
+	- [模块详细设计文档](document/module.md)
+	- [部署文档](document/deploy.md)
+	- [上线确认书](document/deploy_review.md)
+	- [数据库DDL](document/schemal(DDL).sql)
+	- [数据库DML](document/query(DML).md)
+	- [测试用例](document/test-case.md)
+	- [发布变动](document/changeLog.md)
+	- [故障总结表](document/accident_notes.md)
