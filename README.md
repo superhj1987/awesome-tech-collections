@@ -9,6 +9,7 @@
 	- [掘金](http://gold.xitu.io/): 最近比较火热的技术分享/原创社区
 	- [并发编程网](http://ifeve.com/): 缘起并发编程，现在已经包含了java的各种经典技术
 	- [DZone - Java Zone](https://dzone.com/java-jdk-development-tutorials-tools-news): 国外的一个Java技术分享社区站点
+	- [Java Performance Tuning Guide](http://java-performance.info): Java性能优化指南精华文章
 	- [美团点评技术团队](http://tech.meituan.com/): 美团点评研发团队的技术博客，很多美团点评的技术实践文章
 	- [CoolShell.cn](http://coolshell.cn/): 陈皓大神的技术站点，也是笔者学生时期就开始阅读的站点
 	- [花钱的年华](http://calvin1978.blogcn.com/)： 开源Java框架SpringSide的作者-江南白衣的博客，有很多java相关的干货，非常值得阅读
