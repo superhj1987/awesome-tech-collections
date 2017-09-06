@@ -42,3 +42,7 @@
 	- [测试用例](document/test-case.md)
 	- [发布变动](document/changeLog.md)
 	- [故障总结表](document/accident_notes.md)
+
+## Java资源和类库
+
+[awesome-java](awesome-java.md)
