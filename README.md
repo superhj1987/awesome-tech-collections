@@ -2,6 +2,10 @@
 
 技术相关资料收集
 
+## 资源和类库
+
+- [awesome-java](awesome-java.md): 常用Java框架、类库和软件集合列表。
+
 ## 阅读
 
 - **值得follow的技术网站/博客**
@@ -42,7 +46,3 @@
 	- [测试用例](document/test-case.md)
 	- [发布变动](document/changeLog.md)
 	- [故障总结表](document/accident_notes.md)
-
-## Java资源和类库
-
-[awesome-java](awesome-java.md)
