@@ -710,7 +710,7 @@ BY superhj1987
 BY superhj1987
 
 * [greys-anatomy](https://github.com/oldmanpushcart/greys-anatomy) - 在线Java诊断工具，基本原理和Btrace、HOUSEMD类似，能够在不重启应用的情况下动态修改类的行为、监控方法调用轨迹等。
-* [awesome-scripts](https://github.com/superhj1987/awesome-scripts) - Java应用诊断、调试脚本集合，继承了greys-anatomy、housemd、sjk，提供了获取最耗资源的java线程、监测循环依赖类库等功能。
+* [awesome-scripts](https://github.com/superhj1987/awesome-scripts) - Java应用诊断、调试脚本集合，集成了greys-anatomy、housemd、sjk，提供了获取最耗资源的java线程、监测循环依赖类库等功能。
 
 ## Platform
 
