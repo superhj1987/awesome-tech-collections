@@ -1,6 +1,6 @@
 # Awesome Java
 
-PS:  **内容初始来源于[awesome-java](https://github.com/akullpp/awesome-java) by akullpp**, 是Java框架、类库和软件的集合列表。
+PS:  **内容初始来源于 [awesome-java](https://github.com/akullpp/awesome-java) by akullpp**, 是Java框架、类库和软件的集合列表。
 
 - [Awesome Java](#awesome-java)
     - [Ancients](#ancients)
