@@ -5,6 +5,7 @@
 ## 资源和类库
 
 - [awesome-java](awesome-java.md): 常用Java框架、类库和软件集合列表。
+- [awesome-python-crawler](awesome-python-crawler.md): python爬虫项目集合，包括微信、知乎、QQ空间等。
 
 ## 阅读
 
