@@ -1005,7 +1005,3 @@ BY superhj1987
 * [Voxxed](https://www.voxxed.com/)
 
 [c]: https://cdn.rawgit.com/akullpp/23246ca832bda82bb505230bf3538e2a/raw/d9bcdb769bf025292f9c6bc1290f01f1fcd1f864/commercial.svg
-
-## ToDo
-
-开发一个命令行工具，可以搜索指定项目或者分类下的所有项目。
