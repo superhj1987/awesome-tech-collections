@@ -2,6 +2,8 @@
 
 PS:  **内容初始来源于 [awesome-java](https://github.com/akullpp/awesome-java) by akullpp**, 是Java框架、类库和软件的集合列表。
 
+搜索脚本：<https://github.com/superhj1987/awesome-mac-things/blob/master/bin/search_aj>
+
 - [Awesome Java](#awesome-java)
     - [Ancients](#ancients)
     - [Bean Mapping](#bean-mapping)
