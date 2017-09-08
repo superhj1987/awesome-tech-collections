@@ -930,7 +930,7 @@ BY superhj1987
 * Caliper - makes Java microbenchmarking less painful
 * The Auto project - simple, generated value types (AutoValue), factories (AutoFactory) and more
 * Jimfs - full-featured on-heap file system implementation (for java.nio.file)
-* Refaster -- syntax-aware refactoring by example (coming soon)
+* Refaster - syntax-aware refactoring by example (coming soon)
 
 ## Misc
 
