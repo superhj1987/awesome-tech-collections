@@ -4,6 +4,8 @@ PS:  **内容初始来源于 [awesome-java](https://github.com/akullpp/awesome-j
 
 搜索脚本：<https://github.com/superhj1987/awesome-mac-things/blob/master/bin/search_aj>
 
+> 安装mtings, `mthings search_aj [keyword]` 即可搜索Java资源。
+
 - [Awesome Java](#awesome-java)
     - [Ancients](#ancients)
     - [Bean Mapping](#bean-mapping)
