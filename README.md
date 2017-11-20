@@ -45,5 +45,6 @@
 	- [数据库DDL](document/schemal(DDL).sql)
 	- [数据库DML](document/query(DML).md)
 	- [测试用例](document/test-case.md)
-	- [发布变动](document/changeLog.md)
+	- [变更日历汇总](document/changeLogOverview.md)
+	- [变更日志](document/changeLog.md)
 	- [故障总结表](document/accident_notes.md)
