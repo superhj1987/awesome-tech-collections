@@ -4,6 +4,8 @@ PS:  **内容初始来源于 [awesome-java](https://github.com/akullpp/awesome-j
 
 搜索脚本：<https://github.com/superhj1987/awesome-mac-things/blob/master/bin/search_aj>
 
+> 安装mtings, `mthings search_aj [keyword]` 即可搜索Java资源。
+
 - [Awesome Java](#awesome-java)
     - [Ancients](#ancients)
     - [Bean Mapping](#bean-mapping)
@@ -1003,7 +1005,3 @@ BY superhj1987
 * [Voxxed](https://www.voxxed.com/)
 
 [c]: https://cdn.rawgit.com/akullpp/23246ca832bda82bb505230bf3538e2a/raw/d9bcdb769bf025292f9c6bc1290f01f1fcd1f864/commercial.svg
-
-## ToDo
-
-开发一个命令行工具，可以搜索指定项目或者分类下的所有项目。
