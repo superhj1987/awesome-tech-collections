@@ -772,6 +772,7 @@ BY superhj1987
 BY superhj1987
 
 * [ND4J](http://nd4j.org/) - 一个开源的数值计算扩展 ，将Python中著名的numpy库的很多特性带到了Java中。可以用来存储和处理大型多维矩阵。计算和处理速度很快，但占用的内存却很少。
+* [Colt](https://dst.lbl.gov/software/colt/) - 高性能计算库，支持丰富的数学运算。
 
 ## Search
 
