@@ -41,7 +41,10 @@
 
 - **可以参考的研发文档模板/示例**
 	- [业务流程文档](document/business.md)
-	- [架构设计文档](document/arch.md)
+	- [技术调研文档](document/tech-research.md)
+	- [技术方案分析文档](document/tech-analysis.md)
+	- [系统设计文档](document/arch.md)
+	- [缓存量化分析文档](docoment/cache.md)
 	- [模块详细设计文档](document/module.md)
 	- [部署文档](document/deploy.md)
 	- [上线确认书](document/deploy_review.md)
