@@ -39,7 +39,7 @@
 
 ## 文档
 
-- **可以参考的研发文档模板/示例**
+- **可以参考的文档模板/示例**
 	- [业务流程文档](document/business.md)
 	- [技术调研文档](document/tech-research.md)
 	- [技术方案分析文档](document/tech-analysis.md)
@@ -54,3 +54,4 @@
 	- [变更日志概览](document/changeLogOverview.md)
 	- [变更日志](document/changeLog.md)
 	- [故障总结表](document/accident_notes.md)
+	- [团队规划模板](document/team_plan.md)
